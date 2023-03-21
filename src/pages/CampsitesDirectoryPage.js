@@ -6,7 +6,7 @@ import { selectCampsiteById } from '../features/campsites/camplsitesSlice'
 
 const CampsitesDirectoryPage = () => {
     const [campsiteId, setCampsiteId] = useState(0)
-    const selectedCampsite = selectedCampsiteById(campsiteId)
+    const selectedCampsite = selectCampsiteById(campsiteId)
 
 
     return (
