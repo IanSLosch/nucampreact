@@ -12,4 +12,4 @@ const Comment = ({ comment }) => {
     )
 }
 
-export default Comment
+export default Comment 
