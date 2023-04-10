@@ -9,7 +9,7 @@ import { addComment } from "./commentsSlice";
 const CommentForm = ({ campsiteId }) => {
   const [modalOpen, setModalOpen] = useState(false)
 
-const dispatch = useDispatch()
+  const dispatch = useDispatch()
 
   const handleSubmit = (values) => {
     const comment = {
@@ -36,11 +36,12 @@ const dispatch = useDispatch()
           Add Comment
         </ModalHeader>
         <ModalBody>
-          <Formik initialValues={{
-            rating: undefined,
-            author: '',
-            commentText: ''
-          }}
+          <Formik 
+            initialValues={{
+              rating: undefined,
+              author: '',
+              commentText: ''
+            }}
             onSubmit={handleSubmit}
             validate={validateCommentForm}
           >
