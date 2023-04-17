@@ -29,7 +29,7 @@ const UserLoginForm = () => {
         dispatch(setCurrentUser(currentUser))
         setLoginModalOpen(false)
     }
-
+ 
     return (
         <>
             <span className='navbar-text ml-auto'>

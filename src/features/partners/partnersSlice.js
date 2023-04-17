@@ -53,7 +53,7 @@ export const selectFeaturedPartner = (state) => {
         featuredItem: state.partners.partnersArray.find(
             (partner) => partner.featured
         ),
-        isLoading: state.partners.isLoading,
+        isLoading: state.partners.isLoading, 
         errMsg: state.partners.errMsg
     }
 }
